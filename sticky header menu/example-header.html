@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <title>Sticky Plugin</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.sticky.js"></script>
+  <script>
+    $(window).load(function(){
+      $("#header").sticky({ topSpacing: 0 });
+    });
+  </script>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <style>
+    body {
+      height: 10000px;
+      padding: 0;
+      margin: 0;
+    }
+.nav li:hover > a {
+    background: white !important;
+    border-color: #6E67A6;
+    color: black !important;
+}
+.nav li a {
+   
+    background-color: black !important;
+    border: black !important;
+
+}
+    #header {
+      background: black;
+      color: white;
+      font-family: Droid Sans;
+      font-size: 18px;
+      line-height: 1.6em;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      height: 70px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.2);
+      width:100%;
+      box-sizing:border-box;
+    }
+  </style>
+</head>
+<body>
+  <p>This is test this is text this is text at the top.</p><p>
+  <div id="header">
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tutorials</a>
+            <ul class="subs">
+                <li><a href="#">HTML / CSS</a></li>
+                <li><a href="#">JS / jQuery</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">MySQL</a></li>
+                <li><a href="#">XSLT</a></li>
+                <li><a href="#">Ajax</a></li>
+                <li><a href="#">HTML / CSS</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Resources</a>
+            <ul class="subs">
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">MySQL</a></li>
+                <li><a href="#">XSLT</a></li>
+                <li><a href="#">Ajax</a></li>
+                <li><a href="#">HTML / CSS</a></li>
+            </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#/">Back</a></li>
+    </ul>
+  </div></p>
+  <p>This is test this is text this is text at the bottom.</p>
+</body>
+</html>
