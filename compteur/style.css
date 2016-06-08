@@ -1,0 +1,32 @@
+    @font-face {
+    font-family: myFirstFont;
+    src: url(fonts/digital-7.ttf);
+
+}
+
+.count {
+    font-family: myFirstFont;
+    color:white;
+    background-color:black;
+    font-size: 30px;
+    width:45px;
+    text-align: center;
+}
+
+#bl{
+    float:left;
+}
+#ml{
+    float:left;
+}
+#th{
+    float:left;
+}
+#hd{
+    float:left;
+}
+.sep{
+    float:left;
+    background-color: white;
+    width: 5px;
+}

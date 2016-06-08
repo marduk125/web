@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+
+<body style="">
+<div>
+	
+</div>
+
+<script type="text/javascript">
+
+	function pad (str, max) {
+  str = str.toString();
+  return str.length < max ? pad("0" + str, max) : str;
+}
+
+function clic(input){
+	var msg="";
+
+	var t=pad(input,10);
+	var t1 = t.substring(0, 1);
+	var t2 = t.substring(1, 4);
+	var t3 = t.substring(4, 7);
+	var t4 = t.substring(7, 10);
+	var sep ="  ";
+
+	document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">");
+	document.write("<div class=\"count\" id=\"bl\" style=\"width:20px;\">"+t1+" </div>");
+	document.write("<div class=\"sep\">,</div>");
+	document.write("<div class=\"count\" id=\"bl\" style=\"width:50px;\">"+t2+" </div>");
+	document.write("<div class=\"sep\">,</div>");
+	document.write("<div class=\"count\" id=\"bl\" style=\"width:50px;\">"+t3+" </div>");
+	document.write("<div class=\"sep\">,</div>");
+	document.write("<div class=\"count\" id=\"bl\" style=\"width:50px;\">"+t4+" </div>");
+	document.write("<div class=\"sep\">,</div>");
+}
+window.onload = clic(window.location.search.substring(1,50));
+</script>
+</body>
+</html>
