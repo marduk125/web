@@ -1,0 +1,125 @@
+<html>
+<head>
+<!--------Created by Anoop Kumar Sharma-------->
+<title>Cool Scrollbars using CSS</title>
+<style>
+.scrollbar{
+width:150px;
+height:300px;
+background-color:lightgray;
+margin-top:40px;
+margin-left:40px;
+overflow-y:scroll;
+float:left;
+}
+.content{
+height:450px;
+}
+
+/*example2 scrollbar*/
+
+#ex2::-webkit-scrollbar{
+width:16px;
+background-color:#cccccc;
+}
+#ex2::-webkit-scrollbar-thumb{
+background-color:#333333;
+border-radius:10px;
+}
+#ex2::-webkit-scrollbar-thumb:hover{
+background-color:#666666;
+border:1px solid #333333;
+}
+#ex2::-webkit-scrollbar-track{
+border:1px gray solid;
+border-radius:10px;
+-webkit-box-shadow:0 0 6px gray inset;
+}
+
+/* example3 scrollbar*/
+
+#ex3::-webkit-scrollbar{
+width:16px;
+background-color:#cccccc;
+}
+#ex3::-webkit-scrollbar-thumb{
+background-color:#B03C3F;
+border-radius:10px;
+}
+#ex3::-webkit-scrollbar-thumb:hover{
+background-color:#BF4649;
+border:1px solid #333333;
+}
+#ex3::-webkit-scrollbar-thumb:active{
+background-color:#A6393D;
+border:1px solid #333333;
+}
+#ex3::-webkit-scrollbar-track{
+border:1px gray solid;
+border-radius:10px;
+-webkit-box-shadow:0 0 6px gray inset;
+}
+
+/*example4 scrollbar*/
+
+#ex4::-webkit-scrollbar{
+width:8px;
+background-color:#cccccc;
+}
+#ex4::-webkit-scrollbar-thumb{
+background-color:#333333;
+}
+#ex4::-webkit-scrollbar-thumb:hover{
+background-color:#999999;
+border:1px solid #333333;
+}
+#ex4::-webkit-scrollbar-thumb:active{
+background-color:#666666;
+border:1px solid #333333;
+}
+#ex4::-webkit-scrollbar-track{
+border:1px gray solid;
+-webkit-box-shadow:0 0 2px gray inset;
+}
+
+/*example5 scrollbar*/
+
+#ex5::-webkit-scrollbar{
+width:14px;
+background-color:#cccccc;
+}
+#ex5::-webkit-scrollbar-thumb{
+background-color:#00CC66;
+border-radius:10px;
+-webkit-box-shadow:0 0 10px 1px 006600 inset;
+}
+#ex5::-webkit-scrollbar-thumb:hover{
+background-color:#43E44B;
+border:1px solid #333333;
+}
+#ex5::-webkit-scrollbar-track{
+border:1px gray solid;
+border-radius:10px;
+-webkit-box-shadow:0 0 6px gray inset;
+}
+</style>
+</head>
+<body>
+<div class="scrollbar" id="default">
+	<div class="content">Default Example(1)</div>
+</div>
+<div class="scrollbar" id="ex2">
+	<div class="content">Example 2</div>
+</div>
+<div class="scrollbar" id="ex3">
+	<div class="content">Example 3</div>
+</div>
+<div class="scrollbar" id="ex4">
+	<div class="content">Example 4</div>
+</div>
+<div class="scrollbar" id="ex5">
+	<div class="content">Example 5</div>
+</div>
+</body>
+<!--------Created by Anoop Kumar Sharma-------->
+</html>
