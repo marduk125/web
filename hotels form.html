@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .form-control{
+        width:650px;
+        border-radius: 2px;
+        margin-top: -4px;
+        margin-left:0px;
+        height:30px;
+        border-color: #CCCCCC;
+    }
+</style>
+</head>
+<body>
+<form>
+<div class="container" style="margin-top:50px;">
+  <ul class="nav nav-pills" style="margin-left:350px;">
+    <li class="active" ><a data-toggle="tab" href="#home">Step 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Step 2</a></li>
+    <li><a data-toggle="tab" href="#menu4">Step 3</a></li>
+    <li><a data-toggle="tab" href="#menu5">Step 4</a></li>
+    
+  </ul>
+  
+  <div class="tab-content" style="width:700px;margin-left:250px;">
+    <div id="home" class="tab-pane fade in active">
+    
+                    
+            <div class="panel panel-info" >
+                       <h2 style="margin-top:10px;margin-left:20px;">Step1: Détails de l'Hotel</h2>
+          
+
+
+    <div class="container" style="margin-top:-10px;margin-left:5px;padding:15px;">
+     
+     
+     
+      
+        
+        <div class="form-group">
+
+         <label >Nom:</label>
+        <input type="text" class="form-control" placeholder="nom de l'hotel" id="nom"/>
+        <span id="check-e"></span>
+        </div>
+        <label>Categorie</label>
+         <div class="form-group"> 
+         <select class="form-control">
+                <option>1</option>
+                 <option>2</option>
+             <option>3</option>
+                 <option>4</option>
+               <option>5</option>
+                </select>
+          </div>
+         
+         <label >Rue:</label>
+        <div class="form-group" >
+
+        <input type="text" class="form-control" placeholder="Rue" id="rue"/>
+        <span id="check-e"></span>
+        </div>
+        <label >Ville:</label>
+        <div class="form-group">
+
+        <input type="text" class="form-control" placeholder="Ville" id="ville"/>
+        <span id="check-e"></span>
+        </div>
+        <label >Région:</label>
+        <div class="form-group">
+
+        <input type="text" class="form-control" placeholder="Région" id="region"/>
+        <span id="check-e"></span>
+        </div>
+        <label>Pays</label>
+         <div class="form-group"> 
+         <select class="form-control ">
+                <option>1</option>
+                 <option>2</option>
+             <option>3</option>
+                 <option>4</option>
+               <option>5</option>
+                </select>
+          </div>
+
+        
+        <label >Distance de centre ville:</label>
+        <div class="form-group">
+
+        <input type="text" class="form-control" placeholder="Distance du centre ville " id="dist_centre"/>
+        <span id="check-e"></span>
+        </div>
+        <label >Distance de l'aéroport:</label>
+        <div class="form-group">
+
+        <input type="text" class="form-control" id="dist_aero" placeholder="Distance de l'aéroport"/>
+        <span id="check-e"></span>
+        </div>
+        <label >Distance de station du train:</label>
+        <div class="form-group">
+
+        <input type="text" class="form-control" id="dist_tr" placeholder="Distance de station deu train"/>
+        <span id="check-e"></span>
+        </div>
+        <label >Distance de la capitale:</label>
+        <div class="form-group">
+
+        <input type="text" class="form-control" id="dist_cap" placeholder="Distance de la capitale"/>
+        <span id="check-e"></span>
+        </div>
+        <hr align="left" width="650px" >
+        <button class="continue"   href="#menu2" data-toggle="tab" style="background-color:#337AB7;color:white;margin-left:500px;height:40px;width:80px;border-radius:8px;">Suivant</button>
+</div>
+       </div></div>
+   
+    <div id="menu2" class="tab-pane fade">
+              
+            <div class="panel panel-info" >
+                          <h2 style="margin-top:10px;margin-left:20px;">Step2: Equipement de l'Hotel</h2>
+          
+
+
+    <div class="container" style="margin-top:-10px;margin-left:5px;padding:15px;">
+     
+     
+     
+     
+      
+        
+         
+         <div class="form-group" style="margin-top:-10px;" >
+    <div class="checkbox" >
+    <label >
+      <input type="checkbox" > Hall d'accueil
+    </label>
+  </div>
+  <div class="checkbox" >
+    <label >
+      <input type="checkbox" > Ascenceur
+    </label>
+  </div>
+  <div class="checkbox" >
+    <label >
+      <input type="checkbox" > Terminal internet publique
+    </label>
+  </div>
+</div>
+ <label >Nombre total des chambres:</label>
+        <div class="form-group">
+
+        <input type="text" class="form-control" placeholder="nombre des chambres" id="nb_ch"/>
+        <span id="check-e"></span>
+        </div>
+         <label >Nombre des chambres individuelles:</label>
+        <div class="form-group">
+
+        <input type="text" class="form-control" placeholder="nombre des chambres individuelle" id="nb_ch_in"/>
+        <span id="check-e"></span>
+        </div>
+         <label >Nombre des suites:</label>
+        <div class="form-group">
+
+        <input type="text" class="form-control" placeholder="nombre des suites" id="nb_sui"/>
+        <span id="check-e"></span>
+        </div>
+         <label >Nombre des chambres communiquantes:</label>
+        <div class="form-group">
+
+        <input type="text" class="form-control" placeholder="nombre des chambres communiquante" id="nb_ch_co"/>
+        <span id="check-e"></span>
+        </div>
+        <div class="checkbox " >
+   <label>
+      <input type="checkbox" > Parking
+    </label>
+  </div>
+  
+        
+         <div class="form-group" style="margin-top:-10px;">
+         <div class="checkbox" >
+    <label >
+      <input type="checkbox" >Accés WIFI
+    </label>
+  </div>
+    <div class="checkbox" >
+    <label >
+      <input type="checkbox" > TV Satellite
+    </label>
+  </div>
+  <div class="checkbox" >
+    <label >
+      <input type="checkbox" > Téléphone
+    </label>
+  </div>
+  <div class="checkbox" >
+    <label >
+      <input type="checkbox" > Climatisation
+    </label>
+  </div><hr align="left" width="650px" >
+  <button data-toggle="tab" class="continue" data-toggle="tab" href="#menu4" style="background-color:#337AB7;color:white;margin-left:500px;height:40px;width:80px;border-radius:8px;">Suivant</button>
+</div> </div></div>
+   </div>
+     <div id="menu4" class="tab-pane fade">
+               
+            <div class="panel panel-info" >
+                        <h2 style="margin-top:10px;margin-left:20px;">Step3: Services disponibles à l'Hotel</h2>
+          
+
+
+    <div class="container" style="margin-top:-10px;margin-left:5px;padding:15px;">
+     
+     
+     
+      
+        
+       <div class="form-group" style="margin-top:-10px;">
+         <div class="checkbox" >
+    <label >
+      <input type="checkbox" > Location voiture
+    </label>
+  </div>
+    <div class="checkbox" >
+    <label >
+      <input type="checkbox" > Visite de la ville
+    </label>
+  </div>
+  </div><hr align="left" width="650px" >
+  <button data-toggle="tab" class="continue" data-toggle="tab" href="#menu5" style="background-color:#337AB7;color:white;margin-left:500px;height:40px;width:80px;border-radius:8px;">Suivant</button>
+</div>  </div></div>
+    <div id="menu5" class="tab-pane fade">
+              
+            <div class="panel panel-info" >
+                      <h2 style="margin-top:10px;margin-left:20px;">Step4: Autres description de l'Hotel</h2>
+          
+
+
+    <div class="container" style="margin-top:-10px;margin-left:5px;padding:15px;">
+     
+     
+     
+     
+        <label >Titre:</label>
+        <div class="form-group">
+
+        <input type="text" class="form-control" id="titre" placeholder="Titre"/>
+        <span id="check-e"></span>
+        </div>
+        <label >Description:</label>
+        <div class="form-group">
+
+        <textarea style="width:650px;border-color: #CCCCCC;border-radius:2px;" id="desc" placeholder="Description"></textarea>
+        <span id="check-e"></span>
+        </div>
+
+        <hr width="680px" />
+         <label style="font-size:120%;">Gallery des photos :</label>
+        
+         
+        <div class="form-group" >
+          <label >image:</label>
+        <input type="file" required />
+        <span id="check-e"></span>
+        </div><hr align="left" width="650px" >
+        <button type="submit" style="background-color:#337AB7;color:white;margin-left:500px;height:40px;width:120px;border-radius:8px;">Sauvegarder</button>
+</div>  </div></div> </div>
+
+    
+  </div>
+</div>
+</form>
+<script type="text/javascript">
+  $('.continue1').click(function(){
+
+  var nextId = "menu4";
+  $('[href=#'+nextId+']').tab('show');
+
+})
+</script>
+<script>
+$(document).ready(function(){
+     $("#nom").focusin(function(){
+        $(this).css("background-color", "#FFFFFF");
+    });
+    $("#nom").focusout(function(){
+        if($('#nom').val() == ''){
+      $(this).css("background-color", "#F7111E");
+
+      
+   }
+    });
+      $("#rue").focusin(function(){
+        $(this).css("background-color", "#FFFFFF");
+    });
+    $("#rue").focusout(function(){
+        if($('#rue').val() == ''){
+      $(this).css("background-color", "#F7111E");
+      
+   } 
+    });
+      $("#ville").focusin(function(){
+        $(this).css("background-color", "#FFFFFF");
+    });
+    $("#ville").focusout(function(){
+        if($('#ville').val() == ''){
+      $(this).css("background-color", "#F7111E");
+      
+   } 
+    });
+      $("#region").focusin(function(){
+        $(this).css("background-color", "#FFFFFF");
+    });
+    $("#region").focusout(function(){
+        if($('#region').val() == ''){
+      $(this).css("background-color", "#F7111E");
+      
+   } 
+    });
+      $("#dist_centre").focusin(function(){
+        $(this).css("background-color", "#FFFFFF");
+    });
+    $("#dist_centre").focusout(function(){
+        if($('#dist_centre').val() == ''){
+      $(this).css("background-color", "#F7111E");
+      
+   } 
+    });
+      $("#dist_aero").focusin(function(){
+        $(this).css("background-color", "#FFFFFF");
+    });
+    $("#dist_aero").focusout(function(){
+        if($('#dist_aero').val() == ''){
+      $(this).css("background-color", "#F7111E");
+      
+   } 
+    });
+      $("#dist_tr").focusin(function(){
+        $(this).css("background-color", "#FFFFFF");
+    });
+    $("#dist_tr").focusout(function(){
+        if($('#dist_tr').val() == ''){
+      $(this).css("background-color", "#F7111E");
+      
+   } 
+    });
+      $("#dist_cap").focusin(function(){
+        $(this).css("background-color", "#FFFFFF");
+    });
+    $("#dist_cap").focusout(function(){
+        if($('#dist_cap').val() == ''){
+      $(this).css("background-color", "#F7111E");
+      
+   } 
+    });
+      $("#nb_ch").focusin(function(){
+        $(this).css("background-color", "#FFFFFF");
+    });
+    $("#nb_ch").focusout(function(){
+        if($('#nb_ch').val() == ''){
+      $(this).css("background-color", "#F7111E");
+      
+   } 
+    });
+      $("#nb_ch_co").focusin(function(){
+        $(this).css("background-color", "#FFFFFF");
+    });
+    $("#nb_ch_co").focusout(function(){
+        if($('#nb_ch_co').val() == ''){
+      $(this).css("background-color", "#F7111E");
+      
+   } 
+    });
+      $("#nb_sui").focusin(function(){
+        $(this).css("background-color", "#FFFFFF");
+    });
+    $("#nb_sui").focusout(function(){
+        if($('#nb_sui').val() == ''){
+      $(this).css("background-color", "#F7111E");
+      
+   } 
+    });
+      $("#nb_ch_in").focusin(function(){
+        $(this).css("background-color", "#FFFFFF");
+    });
+    $("#nb_ch_in").focusout(function(){
+        if($('#nb_ch_in').val() == ''){
+      $(this).css("background-color", "#F7111E");
+      
+   } 
+    });
+      $("#titre").focusin(function(){
+        $(this).css("background-color", "#FFFFFF");
+    });
+    $("#titre").focusout(function(){
+        if($('#titre').val() == ''){
+      $(this).css("background-color", "#F7111E");
+      
+   } 
+    });
+      $("#desc").focusin(function(){
+        $(this).css("background-color", "#FFFFFF");
+    });
+    $("#desc").focusout(function(){
+        if($('#desc').val() == ''){
+      $(this).css("background-color", "#F7111E");
+      
+   } 
+    });
+});
+</script>
+</body>
+</html>
